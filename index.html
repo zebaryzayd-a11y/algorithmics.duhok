@@ -1,28 +1,318 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Algorithmics Duhok & Zakho — Future Ready Education</title>
-    <meta name="description" content="Algorithmics Duhok & Zakho — international school of programming for kids ages 6 to 18. Future ready education through curiosity, gamification and quality methodology." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQPDKK9YKR"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-MQPDKK9YKR');
+<!DOCTYPE html>
+<html class="dark" lang="ku" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ئەلگۆریتمیکس دهۆک و زاخۆ — Future Ready Education</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#d3c8ff",
+                        "on-secondary-container": "#fffbff",
+                        "surface-container-highest": "#34343c",
+                        "surface-dim": "#12131a",
+                        "surface-container-lowest": "#0d0e15",
+                        "on-error": "#690005",
+                        "surface-container-high": "#292931",
+                        "on-primary": "#320099",
+                        "tertiary-fixed": "#ffe089",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "primary-fixed": "#e6deff",
+                        "outline-variant": "#484456",
+                        "on-background": "#e3e1ec",
+                        "inverse-on-surface": "#2f3038",
+                        "surface-container-low": "#1a1b23",
+                        "outline": "#938ea3",
+                        "tertiary": "#edc22e",
+                        "on-primary-fixed": "#1c0062",
+                        "inverse-primary": "#612cfa",
+                        "surface-variant": "#34343c",
+                        "on-secondary-fixed": "#3e001e",
+                        "surface": "#12131a",
+                        "on-error-container": "#ffdad6",
+                        "background": "#12131a",
+                        "on-primary-fixed-variant": "#4900d6",
+                        "primary-fixed-dim": "#cabeff",
+                        "error-container": "#93000a",
+                        "on-tertiary": "#3d2f00",
+                        "error": "#ffb4ab",
+                        "primary": "#cabeff",
+                        "secondary": "#ffb0c9",
+                        "on-surface": "#e3e1ec",
+                        "surface-container": "#1e1f27",
+                        "surface-bright": "#383941",
+                        "inverse-surface": "#e3e1ec",
+                        "secondary-fixed-dim": "#ffb0c9",
+                        "secondary-container": "#e1037d",
+                        "on-surface-variant": "#cac3d9",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-secondary-fixed-variant": "#8e004c",
+                        "tertiary-fixed-dim": "#edc22e",
+                        "tertiary-container": "#cfa605",
+                        "primary-container": "#5b21f4",
+                        "secondary-fixed": "#ffd9e3",
+                        "on-tertiary-container": "#4e3d00",
+                        "surface-tint": "#cabeff",
+                        "on-secondary": "#640034"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin": "32px",
+                        "base": "8px",
+                        "xl": "80px",
+                        "gutter": "24px",
+                        "sm": "12px",
+                        "md": "24px",
+                        "xs": "4px",
+                        "lg": "48px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Tajawal"],
+                        "body-lg": ["Tajawal"],
+                        "h2": ["Tajawal"],
+                        "label-caps": ["Space Grotesk"],
+                        "h3": ["Tajawal"],
+                        "h1": ["Tajawal"],
+                        "code": ["Tajawal"]
+                    },
+                },
+            },
+        }
     </script>
-    <script type="module" crossorigin src="./assets/index-izz4WvCL.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Buz0Nw1z.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+            font-family: 'Tajawal', sans-serif;
+        }
+        /* Hide scrollbar for horizontal scroll */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen pb-xl antialiased selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden relative" id="magic-canvas">
+
+    <!-- TopAppBar -->
+    <header class="fixed top-0 w-full border-b border-white/10 flex justify-between items-center px-6 py-4 z-50 bg-indigo-950/20 backdrop-blur-xl shadow-[0_0_20px_rgba(91,33,244,0.2)]">
+        <div class="flex items-center gap-sm">
+            <div class="w-10 h-10 rounded-full border border-primary/30 object-cover bg-white/10 flex items-center justify-center text-xl shadow-[0_0_10px_rgba(91,33,244,0.5)]">
+                <span class="material-symbols-outlined text-primary">school</span>
+            </div>
+        </div>
+        <h1 class="font-['Tajawal'] tracking-tight text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-pink-500">ئەلگۆریتمیکس</h1>
+        <button class="scale-95 active:scale-90 transition-transform hover:text-pink-400 transition-colors text-violet-500">
+            <span class="material-symbols-outlined" data-icon="auto_awesome">menu</span>
+        </button>
+    </header>
+
+    <main class="pt-[88px] px-md flex flex-col gap-margin">
+        <!-- Hero Section -->
+        <section class="relative w-full rounded-xl overflow-hidden min-h-[450px] flex flex-col justify-end p-md bg-surface-container-high/30 backdrop-blur-2xl border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
+            <div class="absolute inset-0 -z-10">
+                <img alt="Holographic projection" class="w-full h-full object-cover opacity-60 mix-blend-screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcbI7J_7lYirIiNeWJKk_N6Qg-MhRo-MJAl5OVQXzmUo6BTvMEduhCufngA1Mr630dG3HpkfK5AxkHvFGy5qetiUa-zWcIY4mQwu0rdNrzZBpLi-PwrpzMSLrPGNZghem9Ie-MZr2MalsCv-2H2xwKYG6DG3OkAGKIuFO_8Cx1JhGqXlE_QBb3nxQgC8n3jvN2L7Xmng3aIGQEeOxt3PSKR_hgEb8Qa2SaJQrwU1tMkTjckL4CyCw06nrdq5s2TagWl7HWnZA_z1Ji" />
+                <div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+            </div>
+            <div class="relative z-10 flex flex-col gap-sm">
+                <span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest bg-secondary/20 w-max px-3 py-1 rounded-full shadow-[0_0_15px_rgba(255,46,147,0.3)]" dir="ltr">دهۆک · زاخۆ</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-on-surface leading-tight">قوتابخانەیا کو زارۆکێن حەزا فێربوونێ هەی دبنە داهێنەرێن پاشەڕۆژێ.</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-lg mt-2">ئەلگۆریتمیکس دهۆک و زاخۆ مالا ناڤخۆیی یا قوتابخانەیا پرۆگرامکرنێ یا پێشەنگە ل جیهانێ بۆ تەمەنێ 5 تا 18 ساڵی.</p>
+                <button class="mt-4 relative overflow-hidden group rounded-lg bg-gradient-to-r from-primary-container to-secondary-container text-on-primary-container font-h3 text-body-lg font-bold py-sm px-md shadow-[0_4px_20px_rgba(91,33,244,0.4),_inset_0_1px_0_rgba(255,255,255,0.2)] active:shadow-[inset_0_4px_10px_rgba(0,0,0,0.4)] transition-all">
+                    <span class="relative z-10 flex items-center justify-center gap-xs">
+                        وانەیەکا بێ بەرامبەر تۆمار بکە
+                        <span class="material-symbols-outlined text-xl mr-2" style="transform: rotate(180deg)">arrow_forward</span>
+                    </span>
+                    <div class="absolute inset-0 bg-white/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </button>
+            </div>
+        </section>
+
+        <!-- Live Missions (Courses) Horizontal Scroll -->
+        <section class="flex flex-col gap-sm">
+            <div class="flex justify-between items-end mb-2">
+                <h3 class="text-2xl font-bold text-on-surface">خولێن مە</h3>
+                <span class="font-body-md text-body-md text-primary cursor-pointer hover:text-secondary transition-colors">هەموو</span>
+            </div>
+            <div class="flex overflow-x-auto gap-md pb-sm -mx-md px-md snap-x scrollbar-hide">
+                
+                <!-- Course 1 -->
+                <div class="snap-center shrink-0 w-[280px] bg-surface-container-high/40 backdrop-blur-xl border border-white/10 rounded-xl p-md flex flex-col gap-md relative overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_32px_rgba(91,33,244,0.2)] transition-shadow">
+                    <div class="absolute -top-10 -left-10 w-32 h-32 rounded-full border-[6px] border-surface-container border-t-primary border-l-primary shadow-[0_0_20px_rgba(202,190,255,0.4)] rotate-45 opacity-30"></div>
+                    <div class="flex items-center gap-sm">
+                        <div class="w-10 h-10 rounded-full bg-primary-container/30 flex items-center justify-center border border-primary/20 shadow-[0_0_10px_rgba(91,33,244,0.5)]">
+                            <span class="material-symbols-outlined text-primary">smart_toy</span>
+                        </div>
+                        <div>
+                            <h4 class="font-body-lg text-lg font-bold text-on-surface">دەستپێکا کۆدینگێ</h4>
+                            <p class="text-xs text-on-surface-variant font-sans" dir="ltr">Ages 6–7 | 32 Lessons</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-on-surface-variant">Where the magic begins — your child's first adventure into logic and creativity.</p>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="snap-center shrink-0 w-[280px] bg-surface-container-high/40 backdrop-blur-xl border border-white/10 rounded-xl p-md flex flex-col gap-md relative overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_32px_rgba(91,33,244,0.2)] transition-shadow">
+                    <div class="absolute -top-10 -left-10 w-32 h-32 rounded-full border-[6px] border-surface-container border-t-secondary border-l-secondary shadow-[0_0_20px_rgba(255,176,201,0.4)] rotate-12 opacity-30"></div>
+                    <div class="flex items-center gap-sm">
+                        <div class="w-10 h-10 rounded-full bg-secondary-container/30 flex items-center justify-center border border-secondary/20 shadow-[0_0_10px_rgba(225,3,125,0.5)]">
+                            <span class="material-symbols-outlined text-secondary">memory</span>
+                        </div>
+                        <div>
+                            <h4 class="font-body-lg text-lg font-bold text-on-surface">پرۆگرامکرنا دیتنی</h4>
+                            <p class="text-xs text-on-surface-variant font-sans" dir="ltr">Ages 9–10 | 64 Lessons</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-on-surface-variant">43% of students worldwide choose this — the first step into real coding.</p>
+                </div>
+                
+                <!-- Course 3 -->
+                <div class="snap-center shrink-0 w-[280px] bg-surface-container-high/40 backdrop-blur-xl border border-white/10 rounded-xl p-md flex flex-col gap-md relative overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_32px_rgba(91,33,244,0.2)] transition-shadow">
+                    <div class="absolute -top-10 -left-10 w-32 h-32 rounded-full border-[6px] border-surface-container border-t-primary border-l-primary shadow-[0_0_20px_rgba(202,190,255,0.4)] rotate-[80deg] opacity-30"></div>
+                    <div class="flex items-center gap-sm">
+                        <div class="w-10 h-10 rounded-full bg-primary-container/30 flex items-center justify-center border border-primary/20 shadow-[0_0_10px_rgba(91,33,244,0.5)]">
+                            <span class="material-symbols-outlined text-primary">psychology</span>
+                        </div>
+                        <div>
+                            <h4 class="font-body-lg text-lg font-bold text-on-surface">ژیرییا دەستکرد</h4>
+                            <p class="text-xs text-on-surface-variant font-sans" dir="ltr">Ages 12–15 | 32 Lessons</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-on-surface-variant">AI changes every profession. This course ensures your child isn't just a user, but a creator.</p>
+                </div>
+                
+                <!-- Course 4 -->
+                <div class="snap-center shrink-0 w-[280px] bg-surface-container-high/40 backdrop-blur-xl border border-white/10 rounded-xl p-md flex flex-col gap-md relative overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_32px_rgba(91,33,244,0.2)] transition-shadow">
+                    <div class="absolute -top-10 -left-10 w-32 h-32 rounded-full border-[6px] border-surface-container border-t-secondary border-l-secondary shadow-[0_0_20px_rgba(255,176,201,0.4)] rotate-[120deg] opacity-30"></div>
+                    <div class="flex items-center gap-sm">
+                        <div class="w-10 h-10 rounded-full bg-secondary-container/30 flex items-center justify-center border border-secondary/20 shadow-[0_0_10px_rgba(225,3,125,0.5)]">
+                            <span class="material-symbols-outlined text-secondary">terminal</span>
+                        </div>
+                        <div>
+                            <h4 class="font-body-lg text-lg font-bold text-on-surface">دەستپێکرنا پایتۆن</h4>
+                            <p class="text-xs text-on-surface-variant font-sans" dir="ltr">Ages 11–13 | 64 Lessons</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-on-surface-variant">45% of teens choose Python — the #1 programming language.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Spotlight Card (Values) -->
+        <section class="flex flex-col gap-sm pb-10">
+            <h3 class="text-2xl font-bold text-on-surface mb-2">بەهایێن مە</h3>
+            <div class="relative bg-surface-container-high/20 backdrop-blur-2xl border border-white/10 rounded-xl overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.6)] group">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-50"></div>
+                <div class="relative w-full overflow-hidden min-h-[250px] p-6 flex flex-col justify-center">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-0"></div>
+                    <div class="relative z-10 flex flex-col h-full gap-4">
+                        <h4 class="text-3xl font-bold text-on-surface drop-shadow-md text-transparent bg-clip-text bg-gradient-to-l from-pink-400 to-violet-400">بەهایێ مە یێ سەرەکی حەزەکا مەزنە.</h4>
+                        <p class="text-base text-on-surface-variant leading-relaxed">Everything we do — from teaching a 5-year-old to recruiting teachers — is built on passion, openness to new ideas, and a love for surprises.</p>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            <span class="bg-primary-container/40 text-on-primary-container text-xs px-3 py-1 rounded shadow-[0_0_8px_rgba(91,33,244,0.3)] backdrop-blur-sm border border-white/5">Creative Children</span>
+                            <span class="bg-secondary-container/40 text-on-secondary-container text-xs px-3 py-1 rounded shadow-[0_0_8px_rgba(225,3,125,0.3)] backdrop-blur-sm border border-white/5">Future Skills</span>
+                            <span class="bg-white/10 text-white text-xs px-3 py-1 rounded shadow-[0_0_8px_rgba(255,255,255,0.1)] backdrop-blur-sm border border-white/5">Global Methodology</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- BottomNavBar -->
+    <nav class="fixed bottom-0 w-full rounded-t-2xl border-t border-white/10 bg-[#0E0B2B]/80 backdrop-blur-2xl shadow-[0_-10px_40px_rgba(91,33,244,0.15)] z-50 flex justify-around items-center h-20 px-4 pb-safe md:hidden">
+        <a class="flex flex-col items-center justify-center text-slate-500 hover:bg-white/5 active:inner-shadow transition-all duration-300 w-full h-full" href="#">
+            <span class="material-symbols-outlined mb-1">home</span>
+            <span class="font-['Space_Grotesk'] text-[10px] font-medium uppercase tracking-widest">Home</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-pink-500 drop-shadow-[0_0_8px_rgba(255,46,147,0.8)] hover:bg-white/5 active:inner-shadow transition-all duration-300 w-full h-full" href="#">
+            <span class="material-symbols-outlined mb-1" data-weight="fill">auto_fix_high</span>
+            <span class="font-['Space_Grotesk'] text-[10px] font-medium uppercase tracking-widest">Courses</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-slate-500 hover:bg-white/5 active:inner-shadow transition-all duration-300 w-full h-full" href="#">
+            <span class="material-symbols-outlined mb-1">groups</span>
+            <span class="font-['Space_Grotesk'] text-[10px] font-medium uppercase tracking-widest">About</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-slate-500 hover:bg-white/5 active:inner-shadow transition-all duration-300 w-full h-full" href="#">
+            <span class="material-symbols-outlined mb-1">call</span>
+            <span class="font-['Space_Grotesk'] text-[10px] font-medium uppercase tracking-widest">Contact</span>
+        </a>
+    </nav>
+
+    <!-- Magical Swipe Interaction Script -->
+    <script>
+        const canvas = document.getElementById('magic-canvas');
+        let lastParticleTime = 0;
+
+        function createMagicParticle(x, y) {
+            const now = Date.now();
+            if (now - lastParticleTime < 20) return; // limit emission rate
+            lastParticleTime = now;
+
+            const particle = document.createElement('div');
+            const isPink = Math.random() > 0.5;
+            const color = isPink ? '#ff2e93' : '#5b21f4';
+            const size = Math.random() * 8 + 4;
+            
+            particle.className = 'fixed pointer-events-none rounded-full blur-[1px] mix-blend-screen z-[9999]';
+            particle.style.background = color;
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            particle.style.left = (x - size / 2) + 'px';
+            particle.style.top = (y - size / 2) + 'px';
+            particle.style.boxShadow = `0 0 ${size * 2}px ${color}, 0 0 ${size}px #fff`;
+            
+            // Random direction for dispersion
+            const angle = Math.random() * Math.PI * 2;
+            const velocity = Math.random() * 60 + 20;
+            const dx = Math.cos(angle) * velocity;
+            const dy = Math.sin(angle) * velocity + 20; // Slight downward bias
+            
+            document.body.appendChild(particle);
+
+            // Animate
+            requestAnimationFrame(() => {
+                particle.style.transition = 'transform 0.8s cubic-bezier(0.21, 0.53, 0.29, 0.99), opacity 0.8s ease-out';
+                particle.style.transform = `translate(${dx}px, ${dy}px) scale(0)`;
+                particle.style.opacity = '0';
+            });
+
+            setTimeout(() => {
+                particle.remove();
+            }, 800);
+        }
+
+        // Mobile touch events
+        document.addEventListener('touchmove', (e) => {
+            const touch = e.touches[0];
+            createMagicParticle(touch.clientX, touch.clientY);
+        }, { passive: true });
+
+        // Desktop mouse equivalent for testing
+        let isMouseDown = false;
+        document.addEventListener('mousedown', () => isMouseDown = true);
+        document.addEventListener('mouseup', () => isMouseDown = false);
+        document.addEventListener('mousemove', (e) => {
+            if (isMouseDown) {
+                createMagicParticle(e.clientX, e.clientY);
+            }
+        }, { passive: true });
+    </script>
+</body>
 </html>
